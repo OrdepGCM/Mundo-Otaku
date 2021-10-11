@@ -1,10 +1,13 @@
-* :not(#load){
+* {
   background: #000;
   color: #B9891B;
   margin: 0;
   padding: 0;
 }
-#page-load {
+#logo-image {
+  height: 80px;
+}
+.loading #loading-page {
   background: #000;
   overflow: hidden;
   display: flex;
@@ -14,45 +17,30 @@
   width: 100%;
   height: 800px;
 }
-#load {
-  width: 40px;
-  height: 40px;
-  border: dotted #fff;
-  border-radius: 50%;
-  border-top: none;
+.loaded #loading-page {
+  height: 0;
 }
-#logo-imagem {
-  height: 80px;
-}
-#page {
+.loading #page {
+  background: #0c0;
   height: 0;
   overflow: hidden;
 }
-#logo, #campo-de-pesquisa {
+.loaded #page {
+  height: auto;
+}
+#logo, #research-field {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 20px;
 }
-.campos-pesquisa {
-  padding: 5px 15px;
-  margin: 0;
-}
-label {
-  padding: 0;
-  margin: 0;
-}
-#pesquisa {
+#research {
   width: 300px;
-  
 }
-#procurar-anime {
+#search-anime {
   border-radius: 8px;
 }
-#generos {
-  border: 0;
-}
-#conteudo {
+#contents {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -60,22 +48,84 @@ label {
   margin-top: 30px;
   padding: auto;
 }
-#conteudo div {
+#contents div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 8px;
   margin: 10px;
-  width: 260px;
+  width: 200px;
+  overflow-x: hidden;
 }
-#conteudo div label img {
-  height: 340px;
+#contents div img {
+  max-height: 280px;
   margin: auto;
   border-radius: 12px;
 }
-#conteudo div h4 {
+#contents div h4 {
   text-align: center;
   padding: 8px 0;
   height: auto;
+}
+
+/*  página 2  */
+
+#contents-anime {
+  padding: 20px;
+}
+#banner-anime {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+#banner-anime img { 
+  width: 900px
+}
+#cover-anime div{
+  display: inline-flex;
+  margin-left: 80px;
+  margin-right: 60px;
+  transform: translateY(-80px);
+  float: left;
+  overflow: hidden;
+  width: 280px;
+  justify-content: center;
+}
+#cover-anime img {
+  height: 330px;
+}
+#status-anime {
+  display: flex;
+}
+#status-anime p {
+  background: #3F4044;
+  border: hidden;
+  color: #fff;
+  border-radius: 18px;
+  text-align: center;
+  padding: 5px;
+  margin: 12px 5px;
+}
+#informations-anime {
+  min-height: 250px;
+}
+#informations-anime {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+#informations-anime dt {
+  margin: 8px 0;
+}
+#informations-anime dd {
+  margin: 3px 15px;
+}
+#description-anime {
+  margin: 0 50px;
+}
+#field-trailer {
+  display: flex;
+  margin-top: 90px;
+  justify-content: center;
 }
