@@ -1,0 +1,81 @@
+* :not(#load){
+  background: #000;
+  color: #B9891B;
+  margin: 0;
+  padding: 0;
+}
+#page-load {
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+#load {
+  width: 40px;
+  height: 40px;
+  border: dotted #fff;
+  border-radius: 50%;
+  border-top: none;
+}
+#logo-imagem {
+  height: 80px;
+}
+#page {
+  height: 0;
+  overflow: hidden;
+}
+#logo, #campo-de-pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+.campos-pesquisa {
+  padding: 5px 15px;
+  margin: 0;
+}
+label {
+  padding: 0;
+  margin: 0;
+}
+#pesquisa {
+  width: 300px;
+  
+}
+#procurar-anime {
+  border-radius: 8px;
+}
+#generos {
+  border: 0;
+}
+#conteudo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: auto;
+}
+#conteudo div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px;
+  margin: 10px;
+  width: 260px;
+}
+#conteudo div label img {
+  height: 340px;
+  margin: auto;
+  border-radius: 12px;
+}
+#conteudo div h4 {
+  text-align: center;
+  padding: 8px 0;
+  height: auto;
+}

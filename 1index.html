@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	  <title>Animes</title>
+	  
+	  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+	</head>
+	<body>
+	  <div id="page-load">
+  	  <div id="logo">
+        <img id="logo-imagem" src="./imagem/logo.jpeg" />
+      </div>
+	    <p id="load">
+	      
+	    </p>
+	  </div>
+	  <div id="page">
+  	  <header>
+  	    <div id="logo">
+  	      <img id="logo-imagem" src="./imagem/logo.jpeg" />
+  	    </div>
+  	    <div id="campo-de-pesquisa">
+  	      <label for="search">
+  	        <p class="campos-pesquisa">Pesquisar Anime: </p>
+  	      </label>
+  	      <input id="pesquisa" type="search" list="sugestoes"/ placeholder="Insira no mínimo 3 letras para pesquisar">
+    		  <datalist id="sugestoes">
+    		    
+    	  	</datalist>
+    	  	<button type="submit" id="procurar-anime" class="campos-pesquisa" onclick=()>Procurar</button>
+    	    <select id="generos" class="campos-pesquisa">
+    	      <option selected>Pesquisa por Gênero</option>
+    	      <option value="Ação">Ação</option>
+    	    </select>
+  	    </div>
+  	  </header>
+  		
+  		<div id="conteudo">
+  		  
+  		</div>
+		</div>
+		
+		<script src="./js/API.js"></script>
+	  <script src="./js/main.js"></script>
+	</body>
+</html>
