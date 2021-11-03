@@ -9,19 +9,18 @@
 }
 .loading #loading-page {
   background: #000;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 800px;
+  height: 1500px;
 }
 .loaded #loading-page {
   height: 0;
+  overflow: hidden;
 }
 .loading #page {
-  background: #0c0;
   height: 0;
   overflow: hidden;
 }
@@ -56,7 +55,7 @@
   padding: 8px;
   margin: 10px;
   width: 200px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #contents div img {
   max-height: 280px;
@@ -69,7 +68,7 @@
   height: auto;
 }
 
-/*  página 2  */
+/*  page 2  */
 
 #contents-anime {
   padding: 20px;
@@ -81,6 +80,9 @@
 }
 #banner-anime img { 
   width: 900px
+}
+#cover-anime {
+  padding: 9px;
 }
 #cover-anime div{
   display: inline-flex;
@@ -108,9 +110,6 @@
   margin: 12px 5px;
 }
 #informations-anime {
-  min-height: 250px;
-}
-#informations-anime {
   display: flex;
   flex-direction: column;
   padding: 8px;
@@ -123,6 +122,7 @@
 }
 #description-anime {
   margin: 0 50px;
+  clear: both;
 }
 #field-trailer {
   display: flex;

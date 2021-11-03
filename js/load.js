@@ -1,3 +1,4 @@
+
 let xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -15,13 +16,14 @@ xhttp.onreadystatechange = function() {
     Animes.data.documents.forEach(index => {
       animesNames.push(index.titles.en)
     })
-    }
+    };
     addContent()
     setTimeout( () => {
       document.body.classList.toggle("loaded")
     },2000)
   }
 }
-xhttp.open("GET", "http://localhost:7700/js/API.json", true);
+xhttp.open("GET","https://api.aniapi.com/v1/anime",true)
+//xhttp.open("GET", "http://localhost:7700/js/API.json", true);
 xhttp.send();
 
